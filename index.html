@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mustafa Shawki — AI & Data Analytics</title>
+  <meta name="description" content="AI & Data Analytics Engineer specialising in deep learning, computer vision, and agentic AI workflows.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">Mustafa.Shawki</a>
+    <ul class="nav-links">
+      <li><a href="#intro">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#beyond">More</a></li>
+      <li><a href="https://github.com/mshawki417" target="_blank">GitHub</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Let's Connect</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#intro" class="mobile-link">About</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#projects" class="mobile-link">Work</a>
+    <a href="#testimonials" class="mobile-link">Reviews</a>
+    <a href="#beyond" class="mobile-link">More</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-photo">
+      <img src="assets/profile.png" alt="Mustafa Shawki">
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-name">
+        <span>Mustafa</span>
+        <span>Shawki</span>
+      </h1>
+      <div class="hero-meta">
+        <div class="hero-role">
+          AI &amp; Data Analytics Engineer<br>
+          Deep Learning · Computer Vision · Agentic AI
+        </div>
+        <div class="hero-scroll-hint">
+          <span class="scroll-line"></span>
+          Scroll to explore
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE STRIP ===== -->
+  <div class="marquee-strip">
+    <div class="marquee-track" id="marquee-track">
+      <span>Deep Learning</span><span class="dot">·</span>
+      <span>Computer Vision</span><span class="dot">·</span>
+      <span>Agentic AI</span><span class="dot">·</span>
+      <span>Data Analytics</span><span class="dot">·</span>
+      <span>Machine Learning</span><span class="dot">·</span>
+      <span>SQL &amp; ETL</span><span class="dot">·</span>
+      <span>Power BI</span><span class="dot">·</span>
+      <span>Tableau</span><span class="dot">·</span>
+      <span>PyTorch</span><span class="dot">·</span>
+      <span>TensorFlow</span><span class="dot">·</span>
+      <span>Deep Learning</span><span class="dot">·</span>
+      <span>Computer Vision</span><span class="dot">·</span>
+      <span>Agentic AI</span><span class="dot">·</span>
+      <span>Data Analytics</span><span class="dot">·</span>
+      <span>Machine Learning</span><span class="dot">·</span>
+      <span>SQL &amp; ETL</span><span class="dot">·</span>
+      <span>Power BI</span><span class="dot">·</span>
+      <span>Tableau</span><span class="dot">·</span>
+      <span>PyTorch</span><span class="dot">·</span>
+      <span>TensorFlow</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ===== INTRO / ABOUT ===== -->
+  <section id="intro" class="section">
+    <div class="section-label">About me</div>
+    <div class="intro-grid">
+      <div class="intro-headline reveal">
+        Here's what I<br>
+        <em>actually do</em><br>
+        all day
+      </div>
+      <div class="intro-body">
+        <p class="reveal reveal-delay-1">
+          I'm an <strong>AI &amp; Data Analytics Engineer</strong> currently completing an intensive diploma specialising in CNNs, sequence modelling, computer vision pipelines, and agentic workflows.
+        </p>
+        <p class="reveal reveal-delay-2">
+          With a background in <strong>Engineering</strong>, I bring a systems-thinking approach to my analytical work. I translate complex datasets into high-impact business decisions and build production-grade intelligence pipelines that automate workflows and augment human decision-making.
+        </p>
+        <div class="intro-stats">
+          <div class="reveal reveal-delay-1">
+            <div class="stat-val" data-target="15">0</div>
+            <div class="stat-lbl">AI &amp; ML Projects</div>
+          </div>
+          <div class="reveal reveal-delay-2">
+            <div class="stat-val" data-target="20">0</div>
+            <div class="stat-lbl">Certifications</div>
+          </div>
+          <div class="reveal reveal-delay-3">
+            <div class="stat-val" data-target="100">0</div>
+            <div class="stat-lbl">K+ Records Analysed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES / WHAT I DO ===== -->
+  <section id="services" class="section">
+    <div class="services-header">
+      <div>
+        <div class="section-label">What I do</div>
+        <h2 class="services-headline reveal">
+          UX &amp; <em>Product</em><br>
+          Design Systems<br>
+          &amp; Ops
+        </h2>
+      </div>
+      <p class="services-sub reveal reveal-delay-1">
+        End-to-end expertise across the full intelligence pipeline — from data engineering to deep learning to deployed dashboards.
+      </p>
+    </div>
+
+    <ul class="services-list">
+      <li class="service-item reveal">
+        <span class="service-num">01</span>
+        <span class="service-name">Deep Learning &amp; Neural Networks</span>
+        <span class="service-arrow">→</span>
+      </li>
+      <li class="service-item reveal reveal-delay-1">
+        <span class="service-num">02</span>
+        <span class="service-name">Computer Vision Pipelines</span>
+        <span class="service-arrow">→</span>
+      </li>
+      <li class="service-item reveal reveal-delay-2">
+        <span class="service-num">03</span>
+        <span class="service-name">Data Analytics &amp; BI Dashboards</span>
+        <span class="service-arrow">→</span>
+      </li>
+      <li class="service-item reveal reveal-delay-3">
+        <span class="service-num">04</span>
+        <span class="service-name">Agentic AI &amp; LLM Workflows</span>
+        <span class="service-arrow">→</span>
+      </li>
+      <li class="service-item reveal">
+        <span class="service-num">05</span>
+        <span class="service-name">SQL Database Design &amp; ETL</span>
+        <span class="service-arrow">→</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="projects-header">
+      <div>
+        <div class="section-label">Selected work</div>
+        <h2 class="projects-headline reveal">Featured Projects</h2>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Card 0 - Egypt Education RAG System (wide) -->
+      <div class="project-card wide reveal">
+        <img src="assets/rag-mockup.png" alt="Egypt Education RAG System">
+        <div class="project-overlay">
+          <div class="project-tag">Agentic AI &amp; RAG</div>
+          <div class="project-name">Egypt Education RAG System</div>
+          <div class="project-desc">Production RAG pipeline helping Egyptian students understand their national curriculum. Combines Hybrid Search, real-time web scraping, query intent analysis, and OpenRouter LLM.</div>
+          <div class="project-links">
+            <a href="https://egyptedurag-2026.streamlit.app/" target="_blank" class="project-btn primary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </a>
+            <a href="https://github.com/mshawki417/egypt_edu_rag" target="_blank" class="project-btn ghost">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub Repo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 1 – Sign Language (wide) -->
+      <div class="project-card wide reveal">
+        <img src="assets/project-sign-language.png" alt="Sign Language Recognition">
+        <div class="project-overlay">
+          <div class="project-tag">Computer Vision</div>
+          <div class="project-name">Sign Language Recognition System</div>
+          <div class="project-desc">Landmark extraction (face, hands, pose) fed into a BiLSTM + MobileNetV3 pipeline for real-time sign recognition.</div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="project-card reveal">
+        <img src="assets/project-hotel-analytics.png" alt="Hotel Booking Analytics">
+        <div class="project-overlay">
+          <div class="project-tag">Data Science</div>
+          <div class="project-name">Booking Cancellation &amp; Prediction Analysis</div>
+          <div class="project-desc">SQL Server schemas, Python feature engineering, actionable revenue-retention guidelines.</div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="project-card reveal reveal-delay-1">
+        <img src="assets/project-water-prediction.png" alt="Time-Series Forecasting">
+        <div class="project-overlay">
+          <div class="project-tag">AI + Analytics</div>
+          <div class="project-name">Time-Series Resource Forecaster</div>
+          <div class="project-desc">LSTM model trained on large-scale environmental records to forecast demand and reduce waste.</div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="project-card reveal">
+        <img src="assets/project-ai-agent.png" alt="Agentic AI">
+        <div class="project-overlay">
+          <div class="project-tag">Agentic AI</div>
+          <div class="project-name">Autonomous LLM Analytics Orchestrator</div>
+          <div class="project-desc">Multi-agent LangChain + LangGraph framework with self-correcting Python execution.</div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="project-card reveal reveal-delay-1">
+        <img src="assets/project-emotion-detection.png" alt="Emotion Detection">
+        <div class="project-overlay">
+          <div class="project-tag">Computer Vision</div>
+          <div class="project-name">Facial Mesh Emotion Predictor</div>
+          <div class="project-desc">3D facial coordinate mesh into spatial CNN classifier for real-time emotion distributions.</div>
+        </div>
+      </div>
+
+      <!-- Card 6 - HR Analytics Dashboard -->
+      <div class="project-card reveal">
+        <img src="assets/project-dashboard.png" alt="HR Data Analytics Dashboard">
+        <div class="project-overlay">
+          <div class="project-tag">Data Analytics &amp; BI</div>
+          <div class="project-name">Enterprise HR Analytics Dashboard</div>
+          <div class="project-desc">Interactive dashboard for monitoring employee statistics, salary distributions, and organizational metrics in real-time.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials">
+    <div class="testimonials-label">What people say</div>
+
+    <div class="testimonials-headline-wrap">
+      <div class="testimonials-headline-track">
+        <span>What people say about me</span>
+        <span class="outline">What people say about me</span>
+        <span>What people say about me</span>
+        <span class="outline">What people say about me</span>
+      </div>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"Mustafa's ability to bridge complex deep learning concepts with real business impact is extraordinary. His predictive models saved us weeks of manual analysis."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AK</div>
+          <div>
+            <div class="testimonial-name">Ahmed Karim</div>
+            <div class="testimonial-role">Head of Data, TechSystems Inc.</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"The computer vision pipeline Mustafa built for gesture recognition was production-ready within days. Exceptional attention to detail and clean, maintainable code."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SM</div>
+          <div>
+            <div class="testimonial-name">Sara Mostafa</div>
+            <div class="testimonial-role">CTO, Logistics Global</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-quote">"Working with Mustafa on our BI dashboards transformed how we report KPIs. His Power BI work reduced our weekly reporting time from 4 hours to 20 minutes."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">OA</div>
+          <div>
+            <div class="testimonial-name">Omar Ashraf</div>
+            <div class="testimonial-role">Operations Manager, FinEdge</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BEYOND THE PORTFOLIO ===== -->
+  <section id="beyond">
+    <div class="beyond-grid">
+      <div class="beyond-image">
+        <img src="assets/profile.png" alt="Beyond the portfolio">
+      </div>
+      <div class="beyond-content">
+        <div class="section-label">Beyond the portfolio</div>
+        <h2 class="beyond-headline reveal">
+          The person<br>
+          <em>behind the code</em>
+        </h2>
+        <ul class="beyond-items">
+          <li class="beyond-item reveal">
+            <div class="beyond-icon">🎓</div>
+            <div class="beyond-item-text">
+              <h4>Continuous Learner</h4>
+              <p>Currently completing an intensive AI &amp; Data Analytics Diploma, adding to Google &amp; Microsoft certifications.</p>
+            </div>
+          </li>
+          <li class="beyond-item reveal reveal-delay-1">
+            <div class="beyond-icon">🔬</div>
+            <div class="beyond-item-text">
+              <h4>Engineering Mindset</h4>
+              <p>Bachelor's in Engineering gives me a systems-thinking approach to every data challenge I encounter.</p>
+            </div>
+          </li>
+          <li class="beyond-item reveal reveal-delay-2">
+            <div class="beyond-icon">🌍</div>
+            <div class="beyond-item-text">
+              <h4>Based in Egypt</h4>
+              <p>Working remotely with global clients from Benha, Al Qalyubiyah — open to international collaborations.</p>
+            </div>
+          </li>
+          <li class="beyond-item reveal reveal-delay-3">
+            <div class="beyond-icon">🤖</div>
+            <div class="beyond-item-text">
+              <h4>AI Enthusiast</h4>
+              <p>Deeply passionate about agentic AI, exploring LangGraph, tool-use LLMs, and autonomous decision systems.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="contact-bg-text">Let's<br>connect</div>
+    <div class="contact-inner">
+      <div class="contact-left">
+        <h2 class="contact-headline">
+          <span>Let's</span>
+          <span>connect</span>
+        </h2>
+        <div class="contact-details">
+          <a href="mailto:mustafa01014547739@gmail.com" class="contact-link">
+            <span class="contact-link-icon">✉</span>
+            mustafa01014547739@gmail.com
+          </a>
+          <a href="tel:+201014547739" class="contact-link">
+            <span class="contact-link-icon">☎</span>
+            +20 101 454 7739
+          </a>
+          <a href="https://www.linkedin.com/in/mustafa-shawki" target="_blank" class="contact-link">
+            <span class="contact-link-icon">in</span>
+            linkedin.com/in/mustafa-shawki
+          </a>
+          <div class="contact-link">
+            <span class="contact-link-icon">📍</span>
+            Benha, Al Qalyubiyah, Egypt
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <h3 class="contact-form-title">Send a message</h3>
+        <form id="contact-form">
+          <div class="form-field">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="email@example.com" required>
+          </div>
+          <div class="form-field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Project enquiry" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p class="footer-copy">© 2026 Mustafa Shawki — All rights reserved</p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/mustafa-shawki" target="_blank" class="footer-social-link">LinkedIn</a>
+      <a href="https://github.com/mshawki417" target="_blank" class="footer-social-link">GitHub</a>
+      <a href="https://egyptedurag-2026.streamlit.app/" target="_blank" class="footer-social-link">Live Demo</a>
+      <a href="mailto:mustafa01014547739@gmail.com" class="footer-social-link">Email</a>
+      <a href="tel:+201014547739" class="footer-social-link">Call</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
