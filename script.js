@@ -119,3 +119,38 @@ window.addEventListener('scroll', () => {
     if (img) img.style.transform = `translateY(${window.scrollY * 0.25}px)`;
   }
 });
+
+/* ===================== CERTIFICATIONS FILTER ===================== */
+const certFilters = document.querySelectorAll('.cert-filter');
+const certCards = document.querySelectorAll('.cert-card');
+
+certFilters.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Update active tab
+    certFilters.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.getAttribute('data-filter');
+
+    certCards.forEach(card => {
+      if (filter === 'all' || card.getAttribute('data-issuer') === filter) {
+        card.classList.remove('hidden');
+        card.style.animation = 'certFadeIn 0.4s ease forwards';
+      } else {
+        card.classList.add('hidden');
+        card.style.animation = '';
+      }
+    });
+  });
+});
+
+// Add fadeIn animation
+const certStyle = document.createElement('style');
+certStyle.textContent = `
+  @keyframes certFadeIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+`;
+document.head.appendChild(certStyle);
+
