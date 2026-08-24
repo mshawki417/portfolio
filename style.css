@@ -1511,11 +1511,15 @@ footer {
   .hero-photo img {
     object-position: top center;
     object-fit: cover;
-    opacity: 0.45;
+    opacity: 0.92;
   }
   .hero-content {
     position: relative;
     z-index: 3;
+  }
+  /* Add text shadow so name stays readable against photo */
+  .hero-name {
+    text-shadow: 0 2px 20px rgba(0,0,0,0.6);
   }
 
   /* ── Fix project card images on mobile ── */
