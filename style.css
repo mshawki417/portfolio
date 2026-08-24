@@ -52,6 +52,13 @@ a { text-decoration: none; color: inherit; }
 img { display: block; max-width: 100%; }
 button { cursor: none; border: none; background: none; font-family: var(--font); }
 
+/* ── Hide custom cursor on touch devices ── */
+@media (hover: none) and (pointer: coarse) {
+  body { cursor: auto; }
+  button { cursor: pointer; }
+  .cursor-dot, .cursor-ring { display: none !important; }
+}
+
 /* ===================== CUSTOM CURSOR ===================== */
 .cursor-dot {
   width: 8px; height: 8px;
@@ -1470,6 +1477,12 @@ footer {
   .certs-grid { grid-template-columns: repeat(2, 1fr); }
   .cert-card.featured { grid-column: span 2; }
   .certs-header { flex-direction: column; gap: 20px; align-items: flex-start; }
+
+  /* Fix project image padding on tablets */
+  .project-card img {
+    padding: 24px;
+    padding-bottom: 120px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1493,4 +1506,49 @@ footer {
   .certs-grid { grid-template-columns: 1fr; }
   .cert-card.featured { grid-column: span 1; }
   .cert-card.featured .cert-image-slot { max-width: 100%; }
+
+  /* ── Fix hero photo on mobile ── */
+  .hero-photo img {
+    object-position: top center;
+    object-fit: cover;
+    opacity: 0.45;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 3;
+  }
+
+  /* ── Fix project card images on mobile ── */
+  .project-card img {
+    padding: 16px;
+    padding-bottom: 100px;
+    object-position: center center;
+  }
+
+  /* Fix wide cards height on mobile */
+  .project-card.wide:not(.rag-featured) {
+    aspect-ratio: 4 / 3;
+    min-height: 280px;
+  }
+
+  /* Fix project overlay text overflow */
+  .project-desc { display: none; }
+  .project-links { flex-wrap: wrap; gap: 8px; }
+  .project-btn { font-size: 11px; padding: 7px 14px; }
+  .project-name { font-size: var(--text-base); }
+}
+
+/* ── Extra small screens (< 480px) ── */
+@media (max-width: 480px) {
+  .project-card img {
+    padding: 12px;
+    padding-bottom: 90px;
+  }
+
+  .project-card.wide:not(.rag-featured) {
+    aspect-ratio: 3 / 2;
+    min-height: 240px;
+  }
+
+  .hero-name { font-size: clamp(44px, 14vw, 80px); }
 }
