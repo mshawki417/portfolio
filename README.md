@@ -3,7 +3,7 @@
 Welcome to the source code of my personal portfolio website! This repository contains a sleek, modern, and highly responsive static portfolio showcasing my work as an AI Engineer and Data Analyst.
 
 ## 🚀 Live Demo
-[Live link : **[(https://mshawki417.github.io/portfolio/)]**]
+Live link : **[https://mshawki417.github.io/portfolio/]**
 
 ## ✨ Features
 - **Dark Mode & Glassmorphism:** A premium dark theme with glowing teal accents, subtle gradients, and glassmorphism elements.
