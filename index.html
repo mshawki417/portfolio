@@ -626,7 +626,7 @@
 
       <div class="project-card wide reveal">
 
-        <img src="assets/project-spinneys.png" alt="Spinneys Store — Smart Grocery E-Commerce">
+        <img src="assets/project-spinneys.png" alt="Spinneys Store ï¿½ Smart Grocery E-Commerce">
 
         <div class="project-overlay">
 
@@ -652,6 +652,34 @@
 
       </div>
 
+
+
+      <!-- Card 9 - Komit AI Agent (wide) -->
+
+      <div class="project-card wide reveal komit-card" onclick="openModal('komit')" style="cursor:pointer;">
+
+        <img src="assets/project-komit-agent.png" alt="Komit AI Agent n8n Workflow">
+
+        <div class="project-overlay">
+
+          <div class="project-tag">Agentic AI &amp; n8n</div>
+
+          <div class="project-name">Komit AI Agent</div>
+
+          <div class="project-desc">Multi-subflow AI agent orchestrated entirely in n8n. Integrates Giphy, Google Maps, Claude AI, and custom logic across 6 specialized subflows to handle complex user requests end-to-end.</div>
+
+          <div class="project-links">
+
+            <span class="project-btn primary" style="cursor:pointer;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              View Details
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
 
       <!-- Card 7 - EASO-MANAGE (wide) -->
 
@@ -3062,6 +3090,76 @@
 
   <script src="script.js"></script>
 
+
+
+  <!-- ===== KOMIT AI AGENT MODAL ===== -->
+  <div class="modal-overlay" id="komit-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('komit')">&times;</button>
+      <img class="modal-img" src="assets/project-komit-agent.png" alt="Komit AI Agent Workflow">
+      <div class="modal-body">
+        <span class="modal-tag">Agentic AI &amp; n8n</span>
+        <h2 class="modal-title">Komit AI Agent</h2>
+        <p class="modal-desc">
+          A sophisticated multi-subflow AI agent built entirely in n8n. The agent intelligently routes user requests through 6 specialized subflows, each handling a distinct domain &mdash; from media search and location discovery to Claude-powered reasoning and automated output delivery.
+        </p>
+
+        <div class="modal-subflows">
+          <div class="modal-subflow">
+            <div class="modal-subflow-dot" style="background:#7B5EA7;"></div>
+            <div class="modal-subflow-info">
+              <h4>Giphy &amp; Media Subflow</h4>
+              <p>Handles animated media search and GIF delivery via Giphy API integration</p>
+            </div>
+          </div>
+          <div class="modal-subflow">
+            <div class="modal-subflow-dot" style="background:#4A90D9;"></div>
+            <div class="modal-subflow-info">
+              <h4>Google Maps Subflow</h4>
+              <p>Location intelligence &mdash; places search, directions, and geo-data processing</p>
+            </div>
+          </div>
+          <div class="modal-subflow">
+            <div class="modal-subflow-dot" style="background:#2D6A4F;"></div>
+            <div class="modal-subflow-info">
+              <h4>Data Processing Subflow</h4>
+              <p>Structured data extraction, transformation, and routing between agent nodes</p>
+            </div>
+          </div>
+          <div class="modal-subflow">
+            <div class="modal-subflow-dot" style="background:#C0392B;"></div>
+            <div class="modal-subflow-info">
+              <h4>Claude AI Reasoning Subflow</h4>
+              <p>LLM-powered intent analysis, response generation, and decision orchestration</p>
+            </div>
+          </div>
+          <div class="modal-subflow">
+            <div class="modal-subflow-dot" style="background:#C07A1A;"></div>
+            <div class="modal-subflow-info">
+              <h4>Workflow Orchestration Subflow</h4>
+              <p>Central routing hub that delegates tasks to the appropriate specialized subflow</p>
+            </div>
+          </div>
+          <div class="modal-subflow">
+            <div class="modal-subflow-dot" style="background:#555;"></div>
+            <div class="modal-subflow-info">
+              <h4>Output &amp; Delivery Subflow</h4>
+              <p>Formats and delivers final responses back to the user across channels</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-tech-row">
+          <span class="modal-tech-badge">n8n</span>
+          <span class="modal-tech-badge">Claude AI</span>
+          <span class="modal-tech-badge">Giphy API</span>
+          <span class="modal-tech-badge">Google Maps API</span>
+          <span class="modal-tech-badge">Agentic Workflows</span>
+          <span class="modal-tech-badge">Multi-Subflow Architecture</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 

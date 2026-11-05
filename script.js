@@ -154,3 +154,34 @@ certStyle.textContent = `
 `;
 document.head.appendChild(certStyle);
 
+
+
+// ===== KOMIT AI AGENT MODAL =====
+function openModal(id) {
+  if (id === 'komit') {
+    document.getElementById('komit-modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeModal(id) {
+  if (id === 'komit') {
+    document.getElementById('komit-modal').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+// Close on overlay click
+document.addEventListener('DOMContentLoaded', function () {
+  const komitModal = document.getElementById('komit-modal');
+  if (komitModal) {
+    komitModal.addEventListener('click', function (e) {
+      if (e.target === komitModal) closeModal('komit');
+    });
+  }
+});
+
+// Close on Escape key
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') closeModal('komit');
+});
