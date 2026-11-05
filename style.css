@@ -165,24 +165,25 @@ nav.dark { mix-blend-mode: normal; }
 .hero-photo {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  pointer-events: none;
 }
 .hero-photo img {
   width: 100%; 
-  height: 100%;
+  height: 95%;
+  max-height: 900px;
   object-fit: contain;
   object-position: center bottom;
   /* Removed heavy filters so the transparent cutout pops in full color */
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.25));
-  opacity: 0.95;
+  opacity: 0.98;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2;
   padding: 0 48px 60px;
   display: flex;
   flex-direction: column;
@@ -190,6 +191,8 @@ nav.dark { mix-blend-mode: normal; }
 }
 
 .hero-name {
+  position: relative;
+  z-index: 1;
   font-size: var(--text-hero);
   font-weight: 800;
   line-height: 0.88;
@@ -205,6 +208,8 @@ nav.dark { mix-blend-mode: normal; }
 }
 
 .hero-meta {
+  position: relative;
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -1483,6 +1488,21 @@ footer {
     padding: 24px;
     padding-bottom: 120px;
   }
+
+  /* ── Tablets Hero: keep photo in foreground, scale name ── */
+  .hero-content {
+    padding: 0 36px 48px;
+  }
+  .hero-name {
+    font-size: clamp(52px, 10vw, 92px);
+    line-height: 0.9;
+  }
+  .hero-photo img {
+    height: 85%;
+    max-height: 700px;
+    object-fit: contain;
+    object-position: center bottom;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1492,8 +1512,29 @@ footer {
   .hamburger { display: flex; }
 
   .section { padding: 80px 24px; }
-  .hero-content { padding: 0 24px 48px; }
-  .hero-name { font-size: clamp(52px, 16vw, 120px); }
+
+  /* ── Mobile Hero: photo in foreground (z-index 2), name layered cleanly behind without covering face/body ── */
+  .hero-content {
+    padding: 0 24px 36px;
+  }
+  .hero-name {
+    font-size: clamp(38px, 11vw, 60px);
+    line-height: 0.92;
+  }
+  .hero-photo img {
+    height: 72%;
+    max-height: 520px;
+    object-fit: contain;
+    object-position: center bottom;
+    opacity: 0.98;
+  }
+  .hero-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 16px;
+    margin-top: 16px;
+  }
 
   footer { flex-direction: column; gap: 20px; text-align: center; }
   .testimonials-label { padding: 0 24px; }
@@ -1506,21 +1547,6 @@ footer {
   .certs-grid { grid-template-columns: 1fr; }
   .cert-card.featured { grid-column: span 1; }
   .cert-card.featured .cert-image-slot { max-width: 100%; }
-
-  /* ── Fix hero photo on mobile ── */
-  .hero-photo img {
-    object-position: top center;
-    object-fit: cover;
-    opacity: 0.92;
-  }
-  .hero-content {
-    position: relative;
-    z-index: 3;
-  }
-  /* Add text shadow so name stays readable against photo */
-  .hero-name {
-    text-shadow: 0 2px 20px rgba(0,0,0,0.6);
-  }
 
   /* ── Fix project card images on mobile ── */
   .project-card img {
@@ -1554,7 +1580,22 @@ footer {
     min-height: 240px;
   }
 
-  .hero-name { font-size: clamp(44px, 14vw, 80px); }
+  .hero-content {
+    padding: 0 20px 28px;
+  }
+  .hero-name {
+    font-size: clamp(32px, 10vw, 44px);
+    line-height: 0.94;
+  }
+  .hero-photo img {
+    height: 66%;
+    max-height: 420px;
+    object-fit: contain;
+    object-position: center bottom;
+  }
+  .hero-role {
+    font-size: 11px;
+  }
 }
 
 /* ===== MODAL - Komit AI Agent ===== */
