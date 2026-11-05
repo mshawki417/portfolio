@@ -1557,7 +1557,7 @@ footer {
   .hero-name { font-size: clamp(44px, 14vw, 80px); }
 }
 
-# ===== MODAL - Komit AI Agent =====
+/* ===== MODAL - Komit AI Agent ===== */
 .modal-overlay {
   display: none;
   position: fixed;
